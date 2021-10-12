@@ -26,7 +26,7 @@ public class MultipleAuthProvidersApplicationIntegrationTest {
         ResponseEntity<String> result = makeRestCallToGetPing("memuser", "pass");
 
         assertThat(result.getStatusCodeValue()).isEqualTo(200);
-        assertThat(result.getBody()).isEqualTo("OK");
+        assertThat(result.getBody()).isEqualTo("Ok");
     }
 
     @Test
